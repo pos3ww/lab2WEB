@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    margin-top: 0px;
+}   
+header{
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+    height: 80px;
+    padding-top: 50px;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+}
+#first{
+    width: 300px;
+    background-color:azure;
+    
+    flex-grow: 3;
+    padding: 15px;
+}
+#second{
+    width: 200px;
+    background-color:lightyellow;
+    flex-grow: 2;
+    padding: 10px;
+    float: right;
+    position: relative;
+}
+p{
+    font-size: 25px;
+}
+input{
+    height: 35px;
+    padding: 5px;
+}
+#img1, #img2, #img3{
+    width: 300px;
+    
+}
+#img1:hover, #img2:hover, #img3:hover{
+    z-index: 10;
+}
+#img1{
+    position: relative;
+    top:20px;
+    left: 50px;
+}
+#img2{
+    position: absolute;
+    top: 10%;
+    left: 25%;
+}
+#img3{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+}
+
+.nav-link{
+	color: maroon;
+	flex: 0 1 33.333%;
+	padding: 20px;
+	background-color: lightpink;
+}
+.nav{
+	position: sticky;
+	top: 0;
+	display: flex;
+	width: 100%;
+	text-align: center;
+}
+.nav>a{
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 30px;
+}
+h2{
+	text-align: center;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+.age{
+    width: 130px;
+    font-size: 25px;
+}
+
+
+.form-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.form-column{
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    padding-right: 150px;
+    font-size: 30px;
+    padding-left: 150px;
+}
+
+input{
+    border-radius: 10px;
+    margin: 10px;
+}
+select{
+    border-radius: 10px;
+    margin: 10px;
+    
+}
+
+#signup>form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#form{
+	background-color:lightsteelblue;
+}
+.signup-submit>input{
+    width: 200px;
+    height: 50px;
+    
+	margin-top: 30px;
+    font-size: 20px;
+}
+.signup-submit{
+	display: flex;
+	
+	justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+#signin{
+	padding: 30px;
+	background-color: #beebef;
+}
+.sign-in>input{
+	width: 20%;
+	margin-bottom: 30px;
+}
+
+.sign-in{
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+    
+}
+
+#contacts{
+	background-color: rgb(197, 253, 164);
+	padding: 30px;
+}
+
+.contacts-column>input{
+	width: 80%; 
+}
+.contacts-column>select{
+	width: 80%; 
+    height: 35px
+}
+.contacts-column{
+	display: flex;
+	flex-direction: column;
+	flex: 0 1 45%;
+}
+
+.contacts-row{
+	display: flex;
+}
+
+footer{
+	background-color: rgb(252, 188, 163);
+	width: 100%;
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    position: sticky;
+	bottom: 0;
+	display: flex;
+    justify-content: flex-start;
+	width: 100%;
+}
+footer>a{
+    text-decoration: none;
+    margin: 10px 10px;
+    color: black;
+   
+}
+footer>h2{
+    color: rgb(238, 238, 238);
+    padding-right: 50px;
+    padding-top: 0px;
+}

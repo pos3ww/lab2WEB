@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab2</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Лабараторна робота №2 Пушкарьов І.Є.</h2>
+    </header>
+    <div class="content">
+      <div id="container">
+        <div id="first">
+          <p>
+            Group B gave rise to iconic rally cars that are still celebrated
+            today. Some notable examples include the Audi Quattro, Lancia Delta
+            S4, Peugeot 205 T16, Ford RS200, and MG Metro 6R4. These cars are
+            remembered not only for their speed but also for their unique
+            designs and technological innovations.<img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Portugal_84_Audi_Quattro_A2.jpg/800px-Portugal_84_Audi_Quattro_A2.jpg"
+              style="float: left; width: 400px; height: auto; margin: 10px"
+            />
+            Group B saw significant advancements in automotive technology.
+            Four-wheel drive systems became more prevalent, turbocharging was
+            widely adopted, and lightweight materials were used extensively.
+            These innovations contributed to the incredible speed and agility of
+            the Group B rally cars.The extreme performance of Group B cars led
+            to safety concerns. Spectators and drivers were at risk due to the
+            high speeds and the close proximity of the crowds to the racing
+            action. Unfortunately, a series of accidents, including some
+            fatalities, led to the eventual discontinuation of Group B in 1986.
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/1/16/Lancia_Delta_S4_1986.jpg"
+              style="float: right; width: 350px; height: auto; margin: 10px"
+            />The Group B era was relatively short-lived, lasting only from 1982
+            to 1986. Despite its brief existence, it left a lasting impact on
+            the world of rally racing and automotive engineering, and it is
+            still remembered as one of the most exciting and dangerous periods
+            in rally history.Unlike today's rallying regulations, Group B had
+            minimal restrictions on technology. This resulted in creative and
+            innovative engineering solutions. Manufacturers pushed the
+            boundaries of what was possible in terms of power output,
+            aerodynamics, and suspension systems.
+            <img
+              src="https://rallybodykits.com/images/peugeot/peugeot-205-turbo-16-grupo-b-timo-salonen.jpg"
+              style="
+                display: flex;
+                float: none;
+                width: 350px;
+                height: auto;
+                align-content: flex-end;
+              "
+            />
+            Group B cars were known for their exceptional power-to-weight
+            ratios. With lightweight chassis and incredibly powerful engines,
+            these cars could accelerate rapidly and navigate challenging
+            terrains with agility. The power outputs were often well above 500
+            horsepower, which was remarkable for the time.
+          </p>
+        </div>
+        <div id="second">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/d/d6/LanciaRally037.jpg"
+            id="img1"
+          />
+          <img
+            src="https://p.turbosquid.com/ts-thumb/yb/Tg2G0x/Ft/forrs2000/jpg/1677507124/600x600/fit_q87/cb34466e8bd4358619cccd3bbe3f2c433e6b16ed/forrs2000.jpg"
+            id="img2"
+          />
+          <img
+            src="https://msmproduction.s3.eu-west-1.amazonaws.com/s3fs-public/uploads/2016/01/6R4.jpg"
+            id="img3"
+          />
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#signup" class="nav-link">Registration Form</a>
+        <a href="#signin" class="nav-link">Sighn In Form</a>
+        <a href="#contacts" class="nav-link">Get Back Form</a>
+      </nav>
+
+      <div id="form">
+        <h2>Registration Form</h2>
+        <form>
+          <div class="form-row">
+            <div class="form-column">
+              <label for="name"><strong>First Name</strong></label>
+              <input
+                type="text"
+                name="name"
+                placeholder="First Name"
+                pattern="^[A-ZА-Я][a-zа-я]{3,}"
+                required
+              />
+
+              <label for="surname"><strong>Surname</strong></label>
+              <input
+                type="text"
+                name="surname"
+                placeholder="Surname"
+                pattern="^[A-ZА-Я][a-zа-я]{5,}"
+                required
+              />
+
+              <label for="sex"><strong>Sex</strong></label>
+
+              <div name="sex">
+                <input type="radio" id="male" name="male" />
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="female" />
+                <label for="female">Female</label>
+              </div>
+
+              <label for="age"><strong>Age</strong></label>
+              <input name="age" type="number" min="18" max="100" />
+
+              <label><strong>Birth Date</strong> <input type="date" /></label>
+            </div>
+            <div class="form-column">
+              <label><strong>Country</strong></label>
+
+              <select>
+                <option selected>Ukraine</option>
+                <option>Japan</option>
+                <option>Spain</option>
+                <option>Poland</option>
+                <option>Italy</option>
+                <option>Bulgaria</option>
+              </select>
+              <label><strong>Phone Number</strong></label>
+              <input
+                type="tel"
+                pattern="\+380[0-9]{9}"
+                placeholder="+380XXXXXXXXX"
+                required
+              />
+
+              <label><strong>Socials</strong></label>
+              <input type="text" placeholder="Socials" required />
+
+              <label for="email"><strong>E-mail</strong></label>
+              <input
+                type="email"
+                name="email"
+                placeholder="email@example.com"
+                required
+              />
+              <label for="password"><strong>Password</strong></label>
+              <input
+                type="password"
+                name="password"
+                placeholder="********"
+                required
+              />
+
+              <div>
+                <label for="checkbox"
+                  >Do you agree with terms of services?</label
+                >
+                <input type="checkbox" name="checkbox" />
+              </div>
+            </div>
+          </div>
+          <div class="signup-submit">
+            <input type="submit" />
+            <input type="reset" />
+          </div>
+        </form>
+      </div>
+
+      <div id="signin">
+        <h2>Sign in Form</h2>
+        <form action="" class="sign-in">
+          <input type="text" placeholder="Log in" required />
+          <input type="password" placeholder="Password" required />
+          <input type="submit" />
+        </form>
+      </div>
+
+      <div id="contacts">
+        <h2>Get Back Form</h2>
+        <form action="#">
+          <div class="contacts-row">
+            <div class="contacts-column">
+              <input type="text" placeholder="Login" required />
+              <input type="mail" placeholder="e-mail" required />
+              <select name="subject">
+                <option value="" disabled selected>Message Subject</option>
+                <option value="problem">Problem with product</option>
+                <option value="question">General question</option>
+              </select>
+              <input type="submit" />
+            </div>
+            <div class="contacts-column">
+              <textarea rows="10"></textarea>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <h2>Socials</h2>
+      <a href="https://www.instagram.com/"> Instagram </a>
+      <a href="https://t.me"> Telegram </a>
+      <a href="tel: 4622464642"> Phone </a>
+      <a href="mailto: example@mail.com"> Email </a>
+    </footer>
+  </body>
+</html>
